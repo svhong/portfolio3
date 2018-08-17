@@ -263,12 +263,27 @@ section.secText p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .boxDisplay img {
   display: inherit;
   margin: auto;
+}
+
+.boxDisplay {
+  cursor: pointer;
+}
+
+a img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+a p {
+  text-decoration: none;
+  color: white;
 }
 
 /*-----------Typing effect CSS-------------*/
