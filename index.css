@@ -1,0 +1,290 @@
+/*-------------CSS RESET-----------------*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+/*------------------parallax css----------*/
+section {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+section.sec2 {
+  background: url(./files/images/day-min.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+section.sec3 {
+  background: url(./files/images/sunset-min.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+section.secText {
+  font-family: "8bit";
+  padding: 50px 100px;
+  height: auto;
+  background-color: #1266e6;
+  color: white;
+}
+section.secText h1 {
+  font-family: "8bit";
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+section.secText p {
+  font-family: "8bit";
+  font-size: 18px;
+}
+
+/*---------------Menu CSS-------------------------*/
+
+#MenuItemCover {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: inline-block;
+  position: fixed;
+  top: 65%;
+  left: 85%;
+}
+#MenuItem {
+  font-family: "8bit";
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #1266e6;
+  box-shadow: 1px 1px 1px 1px #051570;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  margin-left: 60px;
+  margin-top: 60px;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+#MenuItem:hover,
+.Submenu:hover {
+  box-shadow: 2px 2px 5px 2px #051570;
+}
+
+.Submenu {
+  font-family: "8bit";
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px #4d040a;
+  position: absolute;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+  margin-top: 75px;
+  color: #1266e6;
+  font-weight: bold;
+  font-size: 9px;
+}
+
+.Submenu a,
+.Submenu a:hover {
+  text-decoration: none;
+}
+
+/*--------SEAN CSS-------------------------------------*/
+#videoWrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+#videoWrapper video {
+  object-fit: fill;
+}
+#videoOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #1266e6;
+  opacity: 0.65;
+}
+#miniMe {
+  position: relative;
+  left: 46%;
+  transform: translate(-50%);
+}
+#welcomeText {
+  font-family: "8bit";
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.cursor {
+  animation: blink 1.4s infinite;
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+
+.boxDisplay img {
+  display: inherit;
+  margin: auto;
+}
+
+/*-----------Typing effect CSS-------------*/
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@font-face {
+  font-family: "8bit";
+  src: url("./files/font/Minecraft-Regular.otf");
+}
