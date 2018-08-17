@@ -119,7 +119,14 @@
         </div>
     </section>
     <script>
-        document.getElementById("videoBackground").play();
+        var promise = document.querySelector("video").play();
+        if (promise !== undefined) {
+            promise.then(_ => {
+                console.log("auto play started");
+            }).catch(error => {
+                console.log("cannot start auto play");
+            });
+        }
 
     </script>
 </body>
