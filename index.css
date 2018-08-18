@@ -251,6 +251,7 @@ section.secText p {
   position: relative;
   display: block;
   width: 160px;
+  height: 320px;
   float: left;
 
   border-left: 1px solid #888;
@@ -289,6 +290,7 @@ section.secText p {
   bottom: 0;
   width: 640px;
 }
+
 .image_title a {
   display: block;
   color: #fff;
@@ -299,7 +301,7 @@ section.secText p {
 
 .image_title a:hover {
   text-decoration: none;
-  color: #1266e6;
+  color: white;
 }
 /*--------SEAN CSS-------------------------------------*/
 #videoWrapper {
@@ -360,6 +362,14 @@ section.secText p {
 .boxDisplay a p {
   text-decoration: none;
   color: white;
+}
+
+.projectOverlay {
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.65;
 }
 
 /*-----------Typing effect CSS-------------*/
