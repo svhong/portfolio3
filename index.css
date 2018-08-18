@@ -372,6 +372,17 @@ section.secText p {
   opacity: 0.65;
 }
 
+#titleListContainer {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.over9k {
+  animation: blink 0.8s infinite;
+  color: red;
+  font-size: 1.6em;
+}
+
 /*-----------Typing effect CSS-------------*/
 @keyframes blink {
   to {
