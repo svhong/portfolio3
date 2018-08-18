@@ -269,12 +269,12 @@ section.secText p {
 
 /*Reduce with of un-hovered elements*/
 .accordian ul:hover li {
-  width: 40px;
+  width: 60px;
 }
 /*Lets apply hover effects now*/
 /*The LI hover style should override the UL hover style*/
 .accordian ul li:hover {
-  width: 640px;
+  width: 440px;
 }
 
 .accordian li img {
@@ -295,6 +295,11 @@ section.secText p {
   text-decoration: none;
   padding: 20px;
   font-size: 16px;
+}
+
+.image_title a:hover {
+  text-decoration: none;
+  color: #1266e6;
 }
 /*--------SEAN CSS-------------------------------------*/
 #videoWrapper {
