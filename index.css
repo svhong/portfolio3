@@ -226,8 +226,10 @@ section.secText p {
   text-decoration: none;
 }
 /*---------------------Projects Accordion-------------------*/
+/*set accordian with to 805px for another image*/
+
 .accordian {
-  width: 805px;
+  width: 650px;
   height: 320px;
   overflow: hidden;
 
