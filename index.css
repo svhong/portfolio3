@@ -384,6 +384,26 @@ section.secText p {
   font-size: 1.6em;
 }
 
+.projectButtons {
+  display: inline-block;
+}
+
+.image_title p {
+  display: inline-block;
+  margin: 3%;
+}
+
+#infoButton {
+  margin-left: 2%;
+}
+
+#baconModal,
+#csfewbcModal,
+#memoryModal,
+#calcModal {
+  color: #1266e6;
+}
+
 /*-----------Typing effect CSS-------------*/
 @keyframes blink {
   to {
