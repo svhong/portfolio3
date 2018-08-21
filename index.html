@@ -10,9 +10,10 @@
     <link rel="shortcut icon" href="./files/images/my.ico">
     <link rel="stylesheet" href="./index.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./index.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -76,7 +77,8 @@
             <ul>
                 <li>
                     <div class="image_title">
-                        <a href="http://memorymatch.seanhongdev.com" target="_blank">Back to the Future Memory Match</a>
+                        <p>BTTF: Memory Match</p>
+                        <button class="projectButtons btn btn-primary" id="memoryInfo">More Info</button>
                     </div>
                     <a href="http://memorymatch.seanhongdev.com" target="_blank">
                         <img src="./files/images/bttf.PNG" />
@@ -84,7 +86,8 @@
                 </li>
                 <li>
                     <div class="image_title">
-                        <a href="http://calcapp.seanhongdev.com" target="_blank">Calculator Application</a>
+                        <p>Calculator Application</p>
+                        <button class="projectButtons btn btn-primary" id="calcInfo">More Info</button>
                     </div>
                     <a href="http://calcapp.seanhongdev.com" target="_blank">
                         <img src="./files/images/calcapp.png" />
@@ -92,7 +95,8 @@
                 </li>
                 <li>
                     <div class="image_title">
-                        <a href="http://www.csfewbcinsurance.org" target="_blank">CSFEWBC Insurance</a>
+                        <p>CSFEWBC Insurance</p>
+                        <button class="projectButtons btn btn-primary" id="csfewbcInfo">More Info</button>
                     </div>
                     <a href="http://www.csfewbcinsurance.org" target="_blank">
                         <img src="./files/images/csfewscreen.PNG" />
@@ -100,7 +104,8 @@
                 </li>
                 <li>
                     <div class="image_title">
-                        <a href="http://bacon.seanhongdev.com" target="_blank">Bacon Ipsum</a>
+                        <p>Bacon Ipsum</p>
+                        <button class="projectButtons btn btn-primary" id="baconInfo">More Info</button>
                     </div>
                     <a href="http://bacon.seanhongdev.com" target="_blank">
                         <img src="./files/images/bacon.PNG" />
@@ -154,6 +159,121 @@
                     <p>Fun Stuff</p>
                 </a>
             </div>
+            <div class="modal" tabindex="-1" role="dialog" id="baconModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Bacon Ipsum Generator</h3>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>a very meaty service to fill empty elements!</p>
+                            <ul>
+                                <li>* built with reactjs</li>
+                                <li>* utilizes axios for meaty data delivery</li>
+                                <li>* users now have choice of cuts and preparation</li>
+                                <li>* bootstrap5 for presentation</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="http://bacon.seanhongdev.com" target="_blank"> <button class="btn btn-primary" id="demoButton">demo
+                                    it!
+                                </button></a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="csfewbcModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>CSFEWBC Insurance</h3>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>a reboot of an outdated website with reactjs</p>
+                            <ul>
+                                <li>* mobile ready and responsive website</li>
+                                <li>* express backend</li>
+                                <li>* reuseable components allowed for multi-site integration</li>
+                                <li>* uses nginx reverse proxy to connect to express backend server</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="http://csfewbcinsurance.com" target="_blank"> <button class="btn btn-primary" id="demoButton">demo
+                                    it!
+                                </button></a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="calcModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Accountability Calculator App</h3>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>accountability calculator application developed for the an accounting team</p>
+                            <ul>
+                                <li>* recorded data, date, and timestamp sent to designated email addresses</li>
+                                <li>* keys limited to numpad, enter, and subtraction key</li>
+                                <li>* utilizes nodejs and sendgrid to send email</li>
+                                <li>* current version only adds and subtracts</li>
+                                <li>* very elementary design for simplicity</li>
+
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="http://calcapp.seanhongdev.com" target="_blank"> <button class="btn btn-primary" id="calcappButton">demo
+                                    it!
+                                </button></a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" role="dialog" id="memoryModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>BTTF: The Memory Game!</h3>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>a simple card matching game with everyone's favorite characters!</p>
+                            <ul>
+                                <li>* Built using AngularJS</li>
+                                <li>* JavaScript and jQuery used for game logic</li>
+                                <li>* utilized CSS3 and AngularJS for animations</li>
+                                <li>* demo button added to showcase win effect</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="http://memorymatch.seanhongdev.com" target="_blank"> <button class="btn btn-primary"
+                                    id="demoButton">demo it!
+                                </button></a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <script>
@@ -167,6 +287,28 @@
         }
         $(document).ready(function () {
             window.scrollTo(0, 0);
+            $("div.Submenu a").click(function (e) {
+                e.preventDefault();
+                $("html,body").animate(
+                    {
+                        scrollTop: $("#" + $(this).data("scroll")).offset().top
+                    },
+                    1000
+                );
+            });
+            $("#baconInfo").click(function () {
+                $("#baconModal").modal("show");
+            })
+            $("#calcInfo").click(function () {
+                $("#calcModal").modal("show");
+            })
+            $("#csfewbcInfo").click(function () {
+                $("#csfewbcModal").modal("show");
+            })
+            $("#memoryInfo").click(function () {
+                $("#memoryModal").modal("show");
+            })
+
         })
 
     </script>

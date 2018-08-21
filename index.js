@@ -25,15 +25,3 @@ $(document).on("click", "#MenuItem", function() {
     });
   }
 });
-
-$(document).ready(function() {
-  $("div.Submenu a").click(function(e) {
-    e.preventDefault();
-    $("html,body").animate(
-      {
-        scrollTop: $("#" + $(this).data("scroll")).offset().top
-      },
-      1000
-    );
-  });
-});
