@@ -404,6 +404,12 @@ section.secText p {
   color: #1266e6;
 }
 
+/*------Media Query Start-----------------------*/
+
+@media only screen and (max-width: 600px) {
+  /*some code here */
+}
+
 /*-----------Typing effect CSS-------------*/
 @keyframes blink {
   to {
