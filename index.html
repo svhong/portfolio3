@@ -86,15 +86,6 @@
                 </li>
                 <li>
                     <div class="image_title">
-                        <p>Speed Typer</p>
-                        <button class="projectButtons btn btn-primary" id="speedInfo">More Info</button>
-                    </div>
-                    <a href="https://speedster.seanhongdev.com" target="_blank">
-                        <img src="./files/images/speedster.PNG" />
-                    </a>
-                </li>
-                <li>
-                    <div class="image_title">
                         <p>PORAC Insurance</p>
                         <button class="projectButtons btn btn-primary" id="csfewbcInfo">More Info</button>
                     </div>
@@ -117,6 +108,15 @@
                     </div>
                     <a href="http://www.veteransjiujitsu.com" target="_blank">
                         <img src="./files/images/vjj.PNG" />
+                    </a>
+                </li>
+                <li>
+                    <div class="image_title">
+                        <p>QuickGifts Cardmall</p>
+                        <button class="projectButtons btn btn-primary" id="cardmall">More Info</button>
+                    </div>
+                    <a href="https://cardmall.quickgifts.com" target="_blank">
+                        <img src="./files/images/cardmall.PNG" />
                     </a>
                 </li>
             </ul>
@@ -209,28 +209,26 @@
                     </div>
                 </div>
             </div>
-            <div class="modal" tabindex="-1" role="dialog" id="speedModal">
+            <div class="modal" tabindex="-1" role="dialog" id="cardmallModal">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h3>Speed Typer!</h3>
+                            <h3>QuickGifts Cardmall</h3>
                             </h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>try to beat the timer!</p>
+                            <p></p>
                             <ul>
-                                <li>* Made using ECMAScript 6</li>
-                                <li>* Receives input from dom and compares from words within pre filled</li>
-                                <li>* Utilized the setInterval() function to check game status</li>
-                                <li>* Bootstrap used for aesthetics</li>
-                                <li>* Very elementary design for simplicity</li>
+                                <li>* Custom UI/UX code integration</li>
+                                <li>* Error banner check by checking user cookie</li>
+                                <li>* Updated UI/UX for easier customer processing</li> 
                             </ul>
                         </div>
                         <div class="modal-footer">
-                            <a href="https://speedster.seanhongdev.com" target="_blank"> <button class="btn btn-primary"
+                            <a href="https://cardmall.quickgifts.com" target="_blank"> <button class="btn btn-primary"
                                     id="demoButton">demo it!
                                 </button></a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
@@ -292,8 +290,8 @@
             $("#baconInfo").click(function () {
                 $("#baconModal").modal("show");
             })
-            $("#speedInfo").click(function () {
-                $("#speedModal").modal("show");
+            $("#cardmall").click(function () {
+                $("#cardmallModal").modal("show");
             })
             $("#poracInfo").click(function () {
                 $("#poracModal").modal("show");
