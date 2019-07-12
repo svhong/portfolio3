@@ -405,11 +405,56 @@ section.secText p {
 }
 
 /*------Media Query Start-----------------------*/
-
-@media only screen and (max-width: 600px) {
-  /*some code here */
+/*iphone 4*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /*some code here*/
+}
+/*iphone 5*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .linkTitles {
+      padding-left: 1rem;
+    }
 }
 
+/*iphone 6 7 8*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .linkTitles {
+      padding-left: 1rem;
+    }
+}
+
+/*iphone plus*/
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .linkTitles {
+      padding-left: 1rem;
+    }
+}
+
+/*iphone x*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .linkTitles {
+      padding-left: 1rem;
+    }
+}
+/**/
+
+
+/**/
 /*-----------Typing effect CSS-------------*/
 @keyframes blink {
   to {
