@@ -451,10 +451,23 @@ section.secText p {
       padding-left: 1rem;
     }
 }
-/**/
 
 
-/**/
+/*Google Pixel*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+/*Samsung Galaxy*/
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
+
 /*-----------Typing effect CSS-------------*/
 @keyframes blink {
   to {
